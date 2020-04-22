@@ -2,5 +2,12 @@ mandatory: True
 question: Hello World
 subquestion: |
   Hello!
+  
+  Your age is ${ Topic_age }
 buttons:
   - Exit: exit
+---
+question: What is your age?
+fields:
+  - no label: Topic_age
+    datatype: integer
