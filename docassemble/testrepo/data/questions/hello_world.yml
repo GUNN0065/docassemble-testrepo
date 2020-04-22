@@ -3,11 +3,17 @@ question: Hello World
 subquestion: |
   Hello!
   
-  Your age is ${ Topic_age }
+  Your name is ${ P_name } and you are ${ Topic_age } years old
+
 buttons:
   - Exit: exit
+---
+question: What is your name?
+fields:
+  - no label: P_name
 ---
 question: What is your age?
 fields:
   - no label: Topic_age
     datatype: integer
+---
